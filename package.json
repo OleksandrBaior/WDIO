@@ -10,11 +10,7 @@
     "@wdio/spec-reporter": "^7.12.5",
     "chromedriver": "^93.0.1",
     "wdio-chromedriver-service": "^7.2.0"
-  },
-  "scripts": {
-    "test": "npx wdio wdio.conf.js",
-    "test:headless": "npx wdio wdio.chrome.headless.conf.js",
-    "allure:serve": "npx allure serve allure-result",
-    "allure:generate": "npx allure renerate allire-results --clean"
   }
+ 
 }
+
