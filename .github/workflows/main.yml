@@ -37,13 +37,14 @@ jobs:
       - name: Deploy report
         uses: JamesIves/github-pages-deploy-action@4.1.4
         if: always()
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: allure-report # The folder the action should deploy.
-          target-folder: docs
+      #   with:
+      #     branch: gh-pages # The branch the action should deploy to.
+      #     folder: allure-report # The folder the action should deploy.
+      #     target-folder: docs
       # - name: Pushes docs to another repository
       #   uses: cpina/github-action-push-to-another-repository@v1.3
-        if: always()
+      #   if: always()
+      
         env:
           API_TOKEN_GITHUB: ${{ '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' }} # Instruction where to get token is below
         with:
