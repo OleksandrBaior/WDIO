@@ -40,3 +40,15 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: allure-report # The folder the action should deploy.
+          target-folder: docs
+      - name: Pushes docs to another repository
+        uses: cpina/github-action-push-to-another-repository@v1.3
+        if: always()
+        env:
+          API_TOKEN_GITHUB: ${{ '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' }} # Instruction where to get token is below
+        with:
+          source-directory: 'docs'
+          destination-github-username: 'OleksandrBaior' # Your username
+          destination-repository-name: 'WDIO' # Name of your repo
+          user-email: bayor,olexandr@gmail.com # Your email
+          target-branch: main  
