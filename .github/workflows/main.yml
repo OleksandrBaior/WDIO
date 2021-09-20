@@ -50,5 +50,5 @@ jobs:
           source-directory: 'docs'
           destination-github-username: 'OleksandrBaior' # Your username
           destination-repository-name: 'WDIO' # Name of your repo
-          user-email: bayor,olexandr@gmail.com # Your email
+          user-email: 'bayor.olexandr@gmail.com' # Your email
           target-branch: main 
