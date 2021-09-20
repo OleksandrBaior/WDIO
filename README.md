@@ -1,1 +1,1 @@
-# WDIO
+# WDIO + allure
